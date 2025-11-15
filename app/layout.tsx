@@ -21,14 +21,21 @@ export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
+
 }>) {
   return (
     <html lang="en">
       <body
+      
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        {/* <nav>
+          <a href="/">Home</a> | <a href="/dashboard/users">Dashboard</a>
+          
+        </nav> */}
         {children}
-      </body>
+
+                </body>
     </html>
   );
 }
